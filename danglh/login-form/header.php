@@ -25,8 +25,12 @@ ob_start();
         <li><a href="quiz.php">Quiz</a></li>
         <?php
         if(isset($_SESSION['right-account'])){
-          echo '<li class="login-out"><a href="login.php" id="login-link">'.$_SESSION['user']['username'].'</a><div class="line"></div>
-          <a href="logout.php" id="logout-link">Logout</a></li>';
+          echo '
+            <li class="login-out">
+              <a href="login.php" id="login-link">'.$_SESSION['user']['username'].'</a>
+              <div class="line"></div>
+              <a href="logout.php" id="logout-link">Logout</a>
+            </li>';
         } else {
           echo '<li><a href="login.php" id="login-link">Login</a></li>';
         }
