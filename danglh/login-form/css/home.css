@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 16px;
+  --background-color: #f4f4f4;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.hero {
+  position: relative;
+  height: 50vh;
+}
+.hero_intro {
+  position: absolute;
+  padding: 1rem 5rem;
+  height: 50vh;
+  align-content: end;
+}
+.hero_background {
+  position: absolute;
+  height: 50vh;
+  width: 100%;
+  background-color: #929292;
+  z-index: -1;
+}
+
+.hero_intro p,
+.hero_intro h1 {
+  margin: 1rem 0rem;
+  width: 50%;
+}
+.btn_learn-more {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.btn_learn-more:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05);
+}
