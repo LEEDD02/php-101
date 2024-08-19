@@ -27,7 +27,7 @@
         <div class="line"></div>
         <li><a href="pro.php">NEWS</a></li>
         <div class="line"></div>
-        <li><a href="vocabulary.php">LOGIN</a></li>
+        <li><a href="login.php">LOGIN</a></li>
       </ul>
     </div>
 

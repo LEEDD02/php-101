@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.background {
+  height: 100vh;
+  width: 115rem;
+  background-image: url('/login-form/sale_web/img/login-background.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-form {
+  background-color: rgba(255, 255, 255, 0.63);
+  backdrop-filter: blur(3px);
+  padding: 3rem 5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.register-form > h2 {
+  color: #a04545;
+  font-size: 3rem;
+}
+.register-form > form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+hr {
+  width: 100%;
+  border-width: thin;
+}
+.register_fullname,
+.register_username,
+.register_password,
+.register_confirm_password,
+.register_date,
+.register_email {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #711c1c88;
+  border-radius: 0.2rem;
+  font-size: 1.2rem;
+  background: none;
+}
+.register_fullname:hover,
+.register_username:hover,
+.register_password:hover,
+.register_confirm_password:hover,
+.register_date:hover,
+.register_email:hover {
+  border: 1px solid #71717188;
+}
+.text_error {
+  color: #a04545;
+}
+h3 {
+  opacity: 0.5;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  transition: all ease 250ms;
+}
+h3 > a {
+  text-decoration: none;
+  color: black;
+}
+h3:hover {
+  opacity: 1;
+}
+.submit {
+  background-color: #5c2a2a;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: #a04545;
+}
+.message {
+  text-align: center;
+  margin-top: 0.6rem;
+  font-size: 1.3rem;
+}
+
+.message > a {
+  color: #a04545;
+}
