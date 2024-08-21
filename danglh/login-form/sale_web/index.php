@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js" defer></script>
   <title>Sale_Web</title>
 </head>
 
@@ -108,6 +109,107 @@
         <img src="img/banner-3.jpg" alt="pic1">
       </div>
     </div>
+  </section>
+
+  <section class="product_sect">
+    <div class="product_list_container" id="product_list_container">
+      <ul class="product_list">
+        <li class="product_container">
+          <div class="hot">
+            <p>HOT</p>
+          </div>
+          <div class="product_img_container"></div>
+          <h3><a href="">Old iPhone 11 (Genuine, 35% cheaper)</a></h3>
+          <h4>1.000$</h4>
+          <button><a href="">Purchase</a></button>
+        </li>
+        <li class="product_container">
+          <div class="hot">
+            <p>HOT</p>
+          </div>
+          <div class="product_img_container"></div>
+          <h3><a href="">Old iPhone 11 (Genuine, 35% cheaper)</a></h3>
+          <h4>1.000$</h4>
+          <button><a href="">Purchase</a></button>
+        </li>
+        <li class="product_container">
+          <div class="product_img_container"></div>
+          <h3><a href="">Old iPhone 11 (Genuine, 35% cheaper)</a></h3>
+          <h4>1.000$</h4>
+          <button><a href="">Purchase</a></button>
+        </li>
+        <li class="product_container">
+          <div class="product_img_container"></div>
+          <h3><a href="">Old iPhone 11 (Genuine, 35% cheaper)</a></h3>
+          <h4>1.000$</h4>
+          <button><a href="">Purchase</a></button>
+        </li>
+        <li class="product_container">
+          <div class="product_img_container"></div>
+          <h3><a href="">Old iPhone 11 (Genuine, 35% cheaper)</a></h3>
+          <h4>1.000$</h4>
+          <button><a href="">Purchase</a></button>
+        </li>
+        <li class="product_container">
+          <div class="hot">
+            <p>HOT</p>
+          </div>
+          <div class="product_img_container"></div>
+          <h3><a href="">Old iPhone 11 (Genuine, 35% cheaper)</a></h3>
+          <h4>1.000$</h4>
+          <button><a href="">Purchase</a></button>
+        </li>
+        <li class="product_container">
+          <div class="hot">
+            <p>HOT</p>
+          </div>
+          <div class="product_img_container"></div>
+          <h3><a href="">Old iPhone 11 (Genuine, 35% cheaper)</a></h3>
+          <h4>1.000$</h4>
+          <button><a href="">Purchase</a></button>
+        </li>
+        <li class="product_container">
+          <div class="product_img_container"></div>
+          <h3><a href="">Old iPhone 11 (Genuine, 35% cheaper)</a></h3>
+          <h4>1.000$</h4>
+          <button><a href="">Purchase</a></button>
+        </li>
+        <li class="product_container">
+          <div class="product_img_container"></div>
+          <h3><a href="">Old iPhone 11 (Genuine, 35% cheaper)</a></h3>
+          <h4>1.000$</h4>
+          <button><a href="">Purchase</a></button>
+        </li>
+        <li class="product_container">
+          <div class="product_img_container"></div>
+          <h3><a href="">Old iPhone 11 (Genuine, 35% cheaper)</a></h3>
+          <h4>1.000$</h4>
+          <button><a href="">Purchase</a></button>
+        </li>
+        <li class="product_container">
+          <div class="product_img_container"></div>
+          <h3><a href="">Old iPhone 11 (Genuine, 35% cheaper)</a></h3>
+          <h4>1.000$</h4>
+          <button><a href="">Purchase</a></button>
+        </li>
+        <li class="product_container">
+          <div class="product_img_container"></div>
+          <h3><a href="">Old iPhone 11 (Genuine, 35% cheaper)</a></h3>
+          <h4>1.000$</h4>
+          <button><a href="">Purchase</a></button>
+        </li>
+        <li class="product_container">
+          <div class="product_img_container"></div>
+          <h3><a href="">Old iPhone 11 (Genuine, 35% cheaper)</a></h3>
+          <h4>1.000$</h4>
+          <button><a href="">Purchase</a></button>
+        </li>
+      </ul>
+
+    </div>
+    <button class="extension" onclick="extension()" id="extension">More...</button>
+
+
   </section>
 
 </body>

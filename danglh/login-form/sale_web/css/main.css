@@ -161,3 +161,86 @@ li:hover .under-line {
 .banner_slider_nav > a :hover {
   opacity: 1;
 }
+.product_sect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0rem 15rem;
+}
+
+.product_list_container {
+  height: 50rem;
+  overflow: hidden;
+}
+.product_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.product_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 17rem;
+  height: 25rem;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  border: 1px solid rgba(131, 131, 131, 0.244);
+}
+.hot {
+  position: absolute;
+  left: 0;
+  background-color: #a22e0e;
+  color: white;
+  margin-top: 0.25rem;
+  padding: 0.25rem 1rem;
+}
+.product_img_container {
+  height: 13rem;
+  width: 13rem;
+  background-color: #a04545;
+}
+.product_container > h3 {
+  text-align: center;
+  font-size: 1.25rem;
+}
+.product_container > h3 > a {
+  text-decoration: none;
+  color: black;
+}
+.product_container > h4 {
+  color: #a04545;
+  font-size: 2rem;
+}
+.product_container > button {
+  background-color: #af4c4c;
+  border-radius: 0.25rem;
+  border: none;
+  width: 80%;
+  font-size: 1.5rem;
+  padding: 0.5rem 0rem;
+  margin-bottom: 1rem;
+  transition: all ease-in-out 250ms;
+}
+.product_container > button > a {
+  text-decoration: none;
+  color: white;
+}
+.product_container > button:hover {
+  background-color: #af4c4c;
+  transform: scale(105%);
+}
+.extension {
+  background-color: #a04545;
+  padding: 0.5rem 2rem;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  border-radius: 0.25rem;
+}
+.extension:hover {
+  background-color: #af4c4c;
+}
