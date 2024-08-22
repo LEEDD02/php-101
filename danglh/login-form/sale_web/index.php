@@ -41,6 +41,19 @@
         <div class="category">
           <a href="home.php">MOBILEPHONE</a>
         </div>
+        <div class="menu">
+          <div class="brand">
+            <h3>Brand</h3>
+          </div>
+          <ul>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+          </ul>
+        </div>
       </li>
 
       <li>
@@ -48,6 +61,19 @@
         </div>
         <div class="category">
           <a href="pro.php">TABLET</a>
+        </div>
+        <div class="menu">
+          <div class="brand">
+            <h3>Brand</h3>
+          </div>
+          <ul>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+          </ul>
         </div>
       </li>
 
@@ -57,6 +83,19 @@
         <div class="category">
           <a href="pro.php">LATOP</a>
         </div>
+        <div class="menu">
+          <div class="brand">
+            <h3>Brand</h3>
+          </div>
+          <ul>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+          </ul>
+        </div>
       </li>
 
       <li>
@@ -64,6 +103,19 @@
         </div>
         <div class="category">
           <a href="vocabulary.php">TELEVISION</a>
+        </div>
+        <div class="menu">
+          <div class="brand">
+            <h3>Brand</h3>
+          </div>
+          <ul>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+          </ul>
         </div>
       </li>
 
@@ -73,6 +125,19 @@
         <div class="category">
           <a href="vocabulary.php">ACCESSORY</a>
         </div>
+        <div class="menu">
+          <div class="brand">
+            <h3>Brand</h3>
+          </div>
+          <ul>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+          </ul>
+        </div>
       </li>
 
       <li>
@@ -81,6 +146,19 @@
         <div class="category">
           <a href="vocabulary.php">WATCH</a>
         </div>
+        <div class="menu-2">
+          <div class="brand">
+            <h3>Brand</h3>
+          </div>
+          <ul>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+          </ul>
+        </div>
       </li>
 
       <li>
@@ -88,6 +166,19 @@
         </div>
         <div class="category">
           <a href="vocabulary.php">HEADPHONE</a>
+        </div>
+        <div class="menu-2">
+          <div class="brand">
+            <h3>Brand</h3>
+          </div>
+          <ul>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+          </ul>
         </div>
       </li>
     </ul>

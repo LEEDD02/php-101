@@ -84,7 +84,75 @@ nav > ul {
 nav > ul > li {
   position: relative;
 }
-
+.menu {
+  width: 35rem;
+  padding: 1rem;
+  position: absolute;
+  background-color: white;
+  z-index: 99;
+  visibility: hidden;
+  border: 1px solid #a04545;
+  border-top: none;
+  box-shadow: 0 4px 15px -5px rgba(0, 0, 0, 0.75);
+}
+nav > ul > li:hover .menu {
+  visibility: visible;
+}
+.menu-2 {
+  right: 0%;
+  width: 35rem;
+  padding: 1rem;
+  position: absolute;
+  background-color: white;
+  z-index: 99;
+  visibility: hidden;
+  border: 1px solid #a04545;
+  border-top: none;
+  box-shadow: 0 4px 15px -5px rgba(0, 0, 0, 0.75);
+}
+nav > ul > li:hover .menu-2 {
+  visibility: visible;
+}
+.brand {
+  width: 10rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #a04545;
+  text-align: start;
+  color: #a04545;
+  font-size: 1.25rem;
+}
+.menu > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.menu > ul > li {
+  width: 10rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgba(169, 169, 169, 0.623);
+  text-align: start;
+  text-align: start;
+  color: black;
+  font-size: 1.25rem;
+}
+.menu-2 > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.menu-2 > ul > li {
+  width: 10rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgba(169, 169, 169, 0.623);
+  text-align: start;
+  text-align: start;
+  color: black;
+  font-size: 1.25rem;
+}
 .category {
   position: relative;
   width: 100%;
