@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 require_once 'model/connect.php';
 
 try {
@@ -17,4 +17,4 @@ try {
   }
 } catch(PDOException $e) {
   echo $e->getMessage();
-}
+}?> -->

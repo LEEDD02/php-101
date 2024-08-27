@@ -14,7 +14,7 @@
     <div class="register-form">
       <h2>Register</h2>
       <hr>
-      <form action="register.php" method="post">
+      <form action="register_process.php" method="post">
         <input class="register_fullname" id="fullname" type="text" name="fullname" placeholder="Fullname">
         <span id="fullname_error" class="text_error"></span>
         <input class="register_username" id="username" type="text" name="username" placeholder="Username">

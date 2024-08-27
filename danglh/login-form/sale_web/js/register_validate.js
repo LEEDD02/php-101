@@ -1,5 +1,5 @@
 function check_form() {
-  let check_form = true
+  let check_form
   let fullname = document.getElementById('fullname').value
   if (fullname.length === 0) {
     document.getElementById('fullname_error').innerHTML = 'Invalid Fullname'
