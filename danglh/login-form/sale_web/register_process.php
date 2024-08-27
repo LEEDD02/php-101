@@ -7,14 +7,7 @@ if (isset($_POST['register_submit'])) {
   $date= $_POST['date'];
   echo '<pre>';
   print_r($_POST);
-
-  $hostname = "127.0.0.1";
-  $username = "danglh";
-  $password = "password";
-  $dbname= 'demo_db';
-
-  $conn = mysqli_connect($hostname, $username, $password, $dbname);
-
+  require 'model/connect.php';
   $sql = "INSERT INTO client (fullname, username, password, email, date) 
   VALUES ('$fullname', '$username', '$password', '$email', '$date')";
   mysqli_query($conn, $sql);
