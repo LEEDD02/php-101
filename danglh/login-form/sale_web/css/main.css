@@ -179,7 +179,7 @@ li:hover .under-line {
 }
 .banner {
   position: relative;
-  padding: 1rem 15rem;
+  padding: 0.5rem 15rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -226,8 +226,9 @@ li:hover .under-line {
   transition: all ease 250ms;
   border: solid 0.1rem white;
 }
-.banner_slider_nav > a :hover {
+.banner_slider_nav > a:hover {
   opacity: 1;
+  transform: scale(110%);
 }
 .product_sect {
   display: flex;
@@ -235,7 +236,7 @@ li:hover .under-line {
   align-items: center;
   gap: 1rem;
   width: 100%;
-  padding: 0rem 15rem;
+  padding: 0.5rem 15rem;
 }
 
 .product_list_container {
@@ -270,6 +271,14 @@ li:hover .under-line {
   height: 13rem;
   width: 13rem;
   background-color: #a04545;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+}
+.product_img_container > img {
+  width: 100%;
 }
 .product_container > h3 {
   text-align: center;
