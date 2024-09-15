@@ -8,8 +8,10 @@
 </head>
 
 <body>
+  Giao dien admin;
   <ul>
     <li><a href="manufacture/manufacture.php">Manufactures</a></li>
+    <li><a href="product/product.php">Product</a></li>
   </ul>
 </body>
 
