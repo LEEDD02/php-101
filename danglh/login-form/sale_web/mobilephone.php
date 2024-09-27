@@ -14,7 +14,7 @@ $result = mysqli_query($conn, $sql);
         <div class="product_img_container">
           <img src="img/iphone-11-pro-max-vang.jpg.webp" alt="">
         </div>
-        <h3><a href=""><?php echo $item['product_name']?></a></h3>
+        <h3><a href="product_detail.php"><?php echo $item['product_name']?></a></h3>
         <h4><?php echo $item['price']?>$</h4>
         <button><a href="">Purchase</a></button>
       </li>

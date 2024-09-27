@@ -2,11 +2,25 @@
 require 'model/connect.php';
 include 'header.php';
 
-If(!isset($_GET['page'])){
-  include 'banner.php';
-  include 'mobilephone.php';
+if (!isset($_GET['page'])) {
+  include 'home.php';
 } else {
-  include $_GET['page'].'.php';
+  $page = $_GET['page'];
+  switch ($page) {
+    case 'mobilephone':
+      include 'mobilephone.php';
+      break;
+    case 'tablet':
+      include 'tablet.php';
+      break;
+    case 'laptop':
+      include 'laptop.php';
+      break;
+
+    default:
+      include 'home.php';
+      break;
+  }
 };
 
 include 'footer.php';
