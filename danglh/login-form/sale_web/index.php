@@ -1,4 +1,6 @@
 <?php
+session_start();
+ob_start();
 require 'model/connect.php';
 include 'header.php';
 
@@ -16,7 +18,6 @@ if (!isset($_GET['page'])) {
     case 'laptop':
       include 'laptop.php';
       break;
-
     default:
       include 'home.php';
       break;

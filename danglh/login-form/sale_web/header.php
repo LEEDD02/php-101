@@ -27,7 +27,16 @@
         <div class="line"></div>
         <li><a href="pro.php">NEWS</a></li>
         <div class="line"></div>
-        <li><a href="login.php">LOGIN</a></li>
+        <?php
+        if(isset($_SESSION['id_user'])){
+          echo '<li><a href="pro.php">MY PROFILE</a></li>
+                <div class="line"></div>
+                <li><a href="logout.php">LOGOUT</a></li>';
+        } else {
+          echo '<li><a href="login.php">LOGIN</a></li>';
+        }
+        ?>
+
       </ul>
     </div>
 

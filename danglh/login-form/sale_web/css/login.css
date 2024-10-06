@@ -89,3 +89,7 @@ h3:hover {
 .message > a {
   color: #a04545;
 }
+.text_error {
+  color: #a04545;
+  padding: 0rem 0.6rem;
+}

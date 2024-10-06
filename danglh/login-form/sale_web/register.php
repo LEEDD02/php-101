@@ -17,9 +17,9 @@
       <form action="register_process.php" method="post">
         <input class="register_fullname" id="fullname" type="text" name="fullname" placeholder="Fullname">
         <span id="fullname_error" class="text_error"></span>
-        <input class="register_username" id="username" type="text" name="username" placeholder="Username">
+        <input class="register_username" id="username" type="text" name="user_name" placeholder="Username">
         <span id="username_error" class="text_error"></span>
-        <input class="register_password" id="password" type="password" name="password" placeholder="Password" r>
+        <input class="register_password" id="password" type="password" name="password" placeholder="Password">
         <span id="password_error" class="text_error"></span>
         <input class="register_confirm_password" type="password" id="confirm_password" name="confirm_password"
           placeholder="Confirm Password">
