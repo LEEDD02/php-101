@@ -377,9 +377,10 @@ li:hover .under-line {
 .similar-product_container {
   background-color: #f0f0f0;
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
   align-items: center;
-  padding: 0.25rem;
+  gap: 1rem;
+  padding: 0.25rem 1rem;
 }
 .similar-product_img {
   display: flex;

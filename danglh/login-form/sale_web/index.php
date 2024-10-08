@@ -5,7 +5,8 @@ require 'model/connect.php';
 include 'header.php';
 
 if (!isset($_GET['page'])) {
-  include 'home.php';
+  include 'banner.php';
+  exit;
 } else {
   $page = $_GET['page'];
   switch ($page) {
@@ -17,6 +18,9 @@ if (!isset($_GET['page'])) {
       break;
     case 'laptop':
       include 'laptop.php';
+      break;
+    case 'product_detail':
+      include 'product_detail.php';
       break;
     default:
       include 'home.php';
