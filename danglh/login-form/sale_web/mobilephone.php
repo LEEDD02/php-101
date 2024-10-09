@@ -13,7 +13,7 @@ $result = mysqli_query($conn, $sql);
         </div>
         <h3><a href="index.php?page=product_detail&&id=<?=$item['id']?>"><?=$item['product_name']?></a></h3>
         <h4><?php echo $item['price']?>$</h4>
-        <button><a href="">Purchase</a></button>
+        <button><a href="index.php?page=product_detail&&id=<?=$item['id']?>">Purchase</a></button>
       </li>
       <?php } ?>
     </ul>

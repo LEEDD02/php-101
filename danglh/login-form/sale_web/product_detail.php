@@ -28,6 +28,9 @@ if(isset($_GET['id'])) {
       <h4><?=$data['price']?>$</h4>
       <p>Color</p>
       <p>Guarantee: 12 Months <a href="">(Detail)</a></p>
+      <div class="btn_add_to_cart">
+        <h2>Add To Cart</h2>
+      </div>
       <div class="product_Specifications">
         <h2>Specifications</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum officiis quis quas culpa qui ab aliquam, quia

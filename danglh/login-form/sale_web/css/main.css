@@ -393,3 +393,15 @@ li:hover .under-line {
 .similar-product_content > h3 {
   color: #af4c4c;
 }
+.btn_add_to_cart {
+  display: flex;
+  justify-content: right;
+}
+s .btn_add_to_cart > h2 {
+  display: inline;
+  color: #f0f0f0;
+  background-color: #a04545;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
