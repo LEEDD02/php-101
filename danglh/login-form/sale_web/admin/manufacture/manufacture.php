@@ -25,18 +25,18 @@
       <td>Phone Number</td>
       <td>img</td>
     </tr>
-    <?php foreach($data as $item) {?>
-    <tr>
-      <td><?=$item['id']?></td>
-      <td><?=$item['brand_name']?></td>
-      <td><?=$item['address']?></td>
-      <td><?=$item['phone_number']?></td>
-      <td>
-        <img height="100" src="<?=$item['img']?>" alt="">
-      </td>
-      <td><a href="form_update.php?id=<?=$item['id']?>">Update</a></td>
-      <td><a href="process_delete.php?id=<?=$item['id']?>">Delete</a></td>
-    </tr>
+    <?php foreach ($data as $item) { ?>
+      <tr>
+        <td><?= $item['id'] ?></td>
+        <td><?= $item['brand_name'] ?></td>
+        <td><?= $item['address'] ?></td>
+        <td><?= $item['phone_number'] ?></td>
+        <td>
+          <img height="100" src="<?= $item['img'] ?>" alt="">
+        </td>
+        <td><a href="form_update.php?id=<?= $item['id'] ?>">Update</a></td>
+        <td><a href="process_delete.php?id=<?= $item['id'] ?>">Delete</a></td>
+      </tr>
     <?php } ?>
   </table>
 

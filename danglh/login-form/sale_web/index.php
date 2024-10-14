@@ -22,6 +22,12 @@ if (!isset($_GET['page'])) {
     case 'product_detail':
       include 'product_detail.php';
       break;
+    case 'cart';
+      include 'cart.php';
+      break;
+    case 'process_cart';
+      include 'process_cart.php';
+      break;
     default:
       include 'home.php';
       break;

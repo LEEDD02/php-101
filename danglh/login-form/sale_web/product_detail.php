@@ -29,7 +29,7 @@ if(isset($_GET['id'])) {
       <p>Color</p>
       <p>Guarantee: 12 Months <a href="">(Detail)</a></p>
       <div class="btn_add_to_cart">
-        <h2>Add To Cart</h2>
+        <h2><a href="index.php?page=process_cart&&id=<?=$data['id']?>">Add To Cart</a></h2>
       </div>
       <div class="product_Specifications">
         <h2>Specifications</h2>

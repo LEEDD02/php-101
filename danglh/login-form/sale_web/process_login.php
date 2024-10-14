@@ -12,7 +12,6 @@ if(isset($_POST['login_submit'])) {
   if($number_rows == 1) {
     $data = mysqli_fetch_array($result);
     $_SESSION['id_user']=$data['id'];
-
     header('location: index.php');
     mysqli_close($conn);
     unset($_SESSION['error']);
