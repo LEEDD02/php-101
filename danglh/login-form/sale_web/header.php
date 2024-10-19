@@ -29,7 +29,7 @@
         <div class="line"></div>
         <?php
         if(isset($_SESSION['id_user'])){
-          echo '<li><a href="pro.php">MY PROFILE</a></li>
+          echo '<li><a href="index.php?page=profile">MY PROFILE</a></li>
                 <div class="line"></div>
                 <li><a href="logout.php">LOGOUT</a></li>';
         } else {

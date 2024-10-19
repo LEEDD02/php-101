@@ -17,6 +17,7 @@ if(isset($_POST['login_submit'])) {
     unset($_SESSION['error']);
   } else {
     $_SESSION['error'] = '<span class="text_error">Username or password does not exit</span>';
+    mysqli_close($conn);
     header('location: login.php');
   }
 }

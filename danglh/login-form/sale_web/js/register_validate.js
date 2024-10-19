@@ -57,6 +57,12 @@ function check_form() {
     check_form = true
   }
 
+  let address = document.getElementById('address').value
+  if (address.length === 0) {
+    document.getElementById('address_error').innerHTML = 'Invalid Address'
+    check_form = true
+  }
+
   if (check_form) {
     return false
   }

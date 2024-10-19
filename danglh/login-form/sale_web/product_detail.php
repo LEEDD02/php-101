@@ -8,6 +8,7 @@ if(isset($_GET['id'])) {
   $type = $data['type'];
   $sql = "select * from product where type = '$type' limit 2";
   $similar_product= mysqli_query($conn,$sql);
+  mysqli_close($conn);
 }
 ?>
 <section class="product_detail">

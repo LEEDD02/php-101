@@ -28,6 +28,9 @@ if (!isset($_GET['page'])) {
     case 'process_cart';
       include 'process_cart.php';
       break;
+    case 'profile';
+      include 'profile.php';
+      break;
     default:
       include 'home.php';
       break;

@@ -2,6 +2,7 @@
 require 'model/connect.php';
 $sql= "select * from product where type='ipad'";
 $result = mysqli_query($conn, $sql);
+mysqli_close($conn);
 ?>
 <section class="product_sect">
   <div class="product_list_container" id="product_list_container">

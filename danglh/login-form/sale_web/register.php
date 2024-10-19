@@ -28,6 +28,11 @@
         <span id="date_error" class="text_error"></span>
         <input class="register_email" id="email" type="email" name="email" placeholder="Email">
         <span id="email_error" class="text_error"></span>
+        <input class="register_email" id="phone_number" type="phone_number" name="phone_number"
+          placeholder="Phone Number">
+        <span id="phone_error" class="text_error"></span>
+        <input class="register_email" id="address" type="address" name="address" placeholder="Address">
+        <span id="address_error" class="text_error"></span>
         <input class="submit" onclick="return check_form()" name="register_submit" type="submit" value="Submit">
       </form>
     </div>

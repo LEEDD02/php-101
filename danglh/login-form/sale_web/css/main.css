@@ -409,6 +409,9 @@ li:hover .under-line {
   text-decoration: none;
 }
 .cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 1rem 40rem;
 }
 .cart_container {
@@ -486,4 +489,39 @@ li:hover .under-line {
 .empty_cart > p {
   font-size: 5rem;
   opacity: 20%;
+  cursor: default;
+}
+
+.receiver_inf {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+.receiver_inf > input {
+  width: 50%;
+  padding: 0.6rem;
+  border: none;
+  border-bottom: 1px solid #711c1c88;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  background: none;
+}
+.receiver_inf > input:hover {
+  border: none;
+  border-bottom: 1px solid #711c1c88;
+}
+.pay {
+  background-color: #5c2a2a;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
 }
