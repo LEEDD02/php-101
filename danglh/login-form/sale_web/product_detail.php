@@ -9,6 +9,8 @@ if(isset($_GET['id'])) {
   $sql = "select * from product where type = '$type' limit 2";
   $similar_product= mysqli_query($conn,$sql);
   mysqli_close($conn);
+} else {
+  header('location: index.php');
 }
 ?>
 <section class="product_detail">
@@ -56,7 +58,15 @@ if(isset($_GET['id'])) {
       </div>
       <?php } ?>
     </div>
-
-
   </div>
+
+
+  <?php
+  if(isset($_GET['error'])) {
+    echo '<div class="text_error">
+          <p>Please login to add to cart</p>
+          </div>';
+  }
+  ?>
+
 </section>

@@ -525,3 +525,11 @@ li:hover .under-line {
   width: 100%;
   cursor: pointer;
 }
+.text_error {
+  margin: 2rem;
+  text-align: center;
+}
+.text_error > p {
+  color: #a22e0e;
+  font-size: 1.5rem;
+}

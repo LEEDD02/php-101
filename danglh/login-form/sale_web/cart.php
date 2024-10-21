@@ -51,8 +51,8 @@ $cart = $_SESSION['cart'];
     echo '
   <form class="receiver_inf" action="process_pay.php" method="post">
     <input type="text" name="fullname" value="'.$data['fullname'].'">
-  <input type="number" name="phone_number" value="'.$data['phone_number'].'">
-  <input type="text" name="address" value="'.$data['address'].'">
+    <input type="number" name="phone_number" value="'.$data['phone_number'].'">
+    <input type="text" name="address" value="'.$data['address'].'">
   <button class="pay" name="pay_btn">Pay</button>
   </form>';
   } ?>
