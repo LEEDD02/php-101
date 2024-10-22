@@ -8,12 +8,12 @@
 </head>
 
 <body>
-  <form action="process_login.php" method="post">
+  <form action="login_process.php" method="post">
     Admin Login </br>
     <input type="text" name="user_name" value="Username">
     <input type="password" name="pwd" value="Password">
     </br>
-    <button type="submit" name="login_btn">Submit</button>
+    <button type="submit" name="login_btn">Login</button>
 
   </form>
 </body>

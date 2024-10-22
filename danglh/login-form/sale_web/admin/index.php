@@ -6,8 +6,8 @@ if (!isset($_GET['page'])) {
   include 'login.php';
 } else {
   switch ($_GET['page']) {
-    case 'menu':
-      include 'menu.php';
+    case 'home':
+      include 'home.php';
       break;
     case 'manufacture':
       include 'manufacture/manufacture.php';
@@ -17,6 +17,12 @@ if (!isset($_GET['page'])) {
       break;
     case 'order':
       include 'order/order.php';
+      break;
+    case 'detail_order':
+      include 'order/detail_order.php';
+      break;
+    case 'update_order':
+      include 'order/update_order.php';
       break;
   }
 }

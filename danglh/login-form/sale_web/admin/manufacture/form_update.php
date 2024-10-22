@@ -9,7 +9,7 @@
 
 <body>
   <?php
-  
+  require 'check_login.php';
   if(isset($_GET['id'])){
     require '../model/connect.php';
     $id = $_GET['id'];

@@ -1,5 +1,5 @@
 <?php
-include 'check_login.php';
+require 'check_login.php';
 ?>
 
 

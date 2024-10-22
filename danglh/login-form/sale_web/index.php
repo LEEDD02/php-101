@@ -31,9 +31,6 @@ if (!isset($_GET['page'])) {
     case 'profile';
       include 'profile.php';
       break;
-    default:
-      include 'home.php';
-      break;
   }
 };
 

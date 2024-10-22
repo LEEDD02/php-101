@@ -15,7 +15,7 @@ if(isset($_POST['login_btn'])) {
     $_SESSION['user_name'] = $data['user_name'];
     $_SESSION['level'] = $data['level'];
     echo $_SESSION['level'];
-    header('location: index.php?page=menu');
+    header('location: index.php?page=home');
     exit;
   } 
   header('location: index.php');
