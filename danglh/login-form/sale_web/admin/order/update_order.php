@@ -1,8 +1,9 @@
 <?php
+require 'check_super_admin.php';
+require '../model/connect.php';
 if(isset($_GET['id']) && isset($_GET['status'])) {
   $id = $_GET['id'];
   $status = $_GET['status'];
-  require '../model/connect.php';
   $sql = "update 
   orders 
   set status = '$status'

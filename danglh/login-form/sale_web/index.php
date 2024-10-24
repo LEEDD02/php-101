@@ -31,6 +31,12 @@ if (!isset($_GET['page'])) {
     case 'profile';
       include 'profile.php';
       break;
+    case 'update_profile';
+      include 'update_profile.php';
+      break;
+    case 'change_pwd';
+      include 'change_pwd.php';
+      break;
   }
 };
 

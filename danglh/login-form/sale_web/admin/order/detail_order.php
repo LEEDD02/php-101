@@ -1,6 +1,7 @@
 <?php
-if(isset($_GET['id'])){
+require 'check_super_admin.php';
 require '../model/connect.php';
+if(isset($_GET['id'])){
 $order_id = $_GET['id'];
 $sql = "select * from order_product
 join product on order_product.product_id = product.id
@@ -20,6 +21,7 @@ mysqli_close($conn);
     <td>Price</td>
     <td>Img</td>
     <td>Quantity</td>
+    
   </tr>
   <?php foreach ($result as $item) {?>
   <tr>

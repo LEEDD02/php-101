@@ -1,5 +1,6 @@
 <?php
-  require '../check_login.php';
+  require 'check_login.php';
+  require 'check_super_admin.php';
   require '../model/connect.php';
   $sql = "select 
   orders.*,
@@ -12,7 +13,7 @@
   $order = mysqli_query($conn,$sql);
   mysqli_close($conn);
 ?>
-
+<a href="../admin/index.php?page=home">Home</a>
 <table width=100%>
   <tr>
     <td>Order ID</td>

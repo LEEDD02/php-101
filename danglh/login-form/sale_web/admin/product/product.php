@@ -1,6 +1,6 @@
-<a href="index.php">Home</a>
+<a href="index.php?page=home">Home</a>
 <br>
-<a href="form_insert.php">Add Product</a>
+<a href="./product/form_insert.php">Add Product</a>
 <?php
   require 'check_login.php';
   require '../model/connect.php';
@@ -29,8 +29,8 @@
     </td>
     <td><?=$item['type']?></td>
     <td><?=$item['manufactures_brand_name']?></td>
-    <td><a href="form_update.php?id=<?=$item['id']?>">Update</a></td>
-    <td><a href="process_delete.php?id=<?=$item['id']?>">Delete</a></td>
+    <td><a href="./product/form_update.php?id=<?=$item['id']?>">Update</a></td>
+    <td><a href="./product/process_delete.php?id=<?=$item['id']?>">Delete</a></td>
   </tr>
   <?php } ?>
 </table>

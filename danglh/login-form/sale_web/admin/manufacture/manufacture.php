@@ -7,7 +7,7 @@
 
 <a href="index.php?page=home">Home</a>
 <br>
-<a href="form_insert.php">Add Manufacture</a>
+<a href="../admin/manufacture/form_insert.php">Add Manufacture</a>
 
 
 <table width=100%>
@@ -27,8 +27,8 @@
     <td>
       <img height="100" src="<?= $item['img'] ?>" alt="">
     </td>
-    <td><a href="form_update.php?id=<?= $item['id'] ?>">Update</a></td>
-    <td><a href="process_delete.php?id=<?= $item['id'] ?>">Delete</a></td>
+    <td><a href="../admin/manufacture/form_update.php?id=<?= $item['id'] ?>">Update</a></td>
+    <td><a href="../admin/manufacture/process_delete.php?id=<?= $item['id'] ?>">Delete</a></td>
   </tr>
   <?php } ?>
 </table>

@@ -9,6 +9,7 @@
 
 <body>
   <?php
+  require 'check_login.php';
   require '../model/connect.php';
   $sql = "select * from manufactures";
   $data = mysqli_query($conn,$sql);

@@ -1,4 +1,5 @@
 <?php
+require 'check_login.php';
 if (
   empty($_POST['product_name']) || empty($_POST['price']) ||
   empty($_POST['img']) || empty($_POST['type'])
@@ -24,4 +25,4 @@ $sql = "insert into product(product_name,price,img,type,manufactures)
 value ('$product_name','$price','$img','$type','$manufactures')";
 mysqli_query($conn, $sql);
 mysqli_close($conn);
-header('location:product.php');
+header('location: ../index.php?page=product');

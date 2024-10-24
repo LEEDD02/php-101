@@ -10,3 +10,8 @@ Giao dien admin;
   <li><a href="index.php?page=order">Order</a></li>
   <li><a href="logout.php">Logout</a></li>
 </ul>
+<?php
+if(isset($_GET['error'])){
+  echo '<h3>You are not super admin</h3>';
+}
+?>

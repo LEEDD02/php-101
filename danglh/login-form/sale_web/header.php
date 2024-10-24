@@ -21,19 +21,17 @@
     </div>
     <div class="information">
       <ul>
-        <li><a href="home.php">HOME</a></li>
-        <div class="line"></div>
-        <li><a href="pro.php">ABOUT</a></li>
-        <div class="line"></div>
-        <li><a href="pro.php">NEWS</a></li>
-        <div class="line"></div>
         <?php
         if(isset($_SESSION['id_user'])){
-          echo '<li><a href="index.php?page=profile">MY PROFILE</a></li>
+          echo '<li><a href="index.php?page=cart">View Cart</a></li>
                 <div class="line"></div>
-                <li><a href="logout.php">LOGOUT</a></li>';
+                <li><a href="index.php?page=profile">Profile</a></li>
+                <div class="line"></div>
+                <li><a href="logout.php">Logout</a></li>';
         } else {
-          echo '<li><a href="login.php">LOGIN</a></li>';
+          echo '<li><a href="login.php">Login</a></li>
+                <div class="line"></div>
+                <li><a href="register.php">Register</a></li>';
         }
         ?>
 

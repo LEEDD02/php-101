@@ -15,4 +15,4 @@ $sql = "insert into manufactures(brand_name,address,phone_number,img)
 value ('$brand_name','$address','$phone_number','$img')";
 mysqli_query($conn, $sql);
 mysqli_close($conn);
-header('location:manufacture.php');
+header('location: ../index.php?page=manufacture');

@@ -1,4 +1,5 @@
 <?php
+require 'check_login.php';
 // if (
 //   empty($_POST['brand_name']) || empty($_POST['address']) ||
 //   empty($_POST['phone_number']) || empty($_POST['img'])
@@ -25,4 +26,4 @@ where id='$id'
 print_r($_POST);
 mysqli_query($conn, $sql);
 mysqli_close($conn);
-header('location:product.php');
+header('location: ../index.php?page=product');

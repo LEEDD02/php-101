@@ -22,4 +22,4 @@ where id='$id'
 ";
 mysqli_query($conn, $sql);
 mysqli_close($conn);
-header('location:manufacture.php');
+header('location: ../index.php?page=manufacture');

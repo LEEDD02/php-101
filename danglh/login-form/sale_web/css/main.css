@@ -533,3 +533,109 @@ li:hover .under-line {
   color: #a22e0e;
   font-size: 1.5rem;
 }
+.profile {
+  width: 100%;
+  padding: 1rem 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profile_header {
+  text-align: center;
+}
+.profile_header > h1 {
+  font-size: 2rem;
+  opacity: 50%;
+  cursor: default;
+}
+.profile_container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.profile_info {
+  width: 40%;
+  padding: 0.5rem 2rem;
+  margin: 0rem 2rem;
+  border-bottom: #a04545 solid 1px;
+}
+.profile_info > p {
+  cursor: default;
+  font-size: 1rem;
+}
+.update_profile {
+  text-align: center;
+  margin-top: 1rem;
+}
+.update_profile_btn {
+  background-color: #e3e3e3;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+}
+.update_profile_btn > a {
+  text-decoration: none;
+  color: #a04545;
+}
+.form_container > input {
+  font-size: 1rem;
+  border: none;
+  width: 40%;
+  padding: 0.5rem 2rem;
+  margin: 0rem 2rem;
+  border-bottom: #a04545 solid 1px;
+}
+.form_container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.update_profile > button {
+  border: none;
+  background-color: #e3e3e3;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  color: #a04545;
+  font-size: 1.25rem;
+}
+.change_pwd_container {
+  padding-top: 1rem;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.input_container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.input_container > p {
+  z-index: 99;
+}
+.input_container > input {
+  position: relative;
+  font-size: 1rem;
+  border: none;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  margin: 0rem 2rem;
+  border-bottom: #a04545 solid 1px;
+}
+.text_errorr {
+  text-align: center;
+  padding-top: 0.5rem;
+  color: #a04545;
+}
