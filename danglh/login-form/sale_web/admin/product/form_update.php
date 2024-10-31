@@ -9,7 +9,7 @@
 
 <body>
   <?php
-  require 'check_login.php';
+  require '../check_login.php';
   require '../model/connect.php';
   $sql = "select * from manufactures";
   $manufactures = mysqli_query($conn,$sql);
@@ -21,7 +21,7 @@
   }
   
 ?>
-  <form action="process_update.php" method="post">
+  <form action="process_update.php" method="post" enctype="multipart/form-data">
     Product Name
     <input type="hidden" name="id" value="<?=$product['id'] ?>">
     <input type="text" name="product_name" id="" value="<?=$product['product_name'] ?>">
@@ -30,7 +30,7 @@
     <input type="text" name="price" value="<?=$product['price'] ?>">
     <br>
     Img
-    <input type="file" name="img" value="Error">
+    <input type="file" name="img">
     <br>
     Type
     <input type="text" name="type" value="<?=$product['type'] ?>">
@@ -43,7 +43,7 @@
       <?php } ?>
     </select>
     <br>
-    <button type="submit">Update</button>
+    <button type="submit" name="submit">Update</button>
   </form>
 </body>
 

@@ -1,5 +1,5 @@
 <?php
-require 'check_login.php';
+require '../check_login.php';
 if (
   empty($_POST['product_name']) || empty($_POST['price']) ||
   empty($_POST['img']) || empty($_POST['type'])

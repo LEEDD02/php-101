@@ -24,6 +24,9 @@ if (!isset($_GET['page'])) {
     case 'update_order':
       include 'order/update_order.php';
       break;
+    case 'statistic':
+      include 'statistic/statistic.php';
+      break;
   }
 }
 include 'footer.php';

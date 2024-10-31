@@ -8,6 +8,7 @@ Giao dien admin;
   <li><a href="index.php?page=manufacture">Manufactures</a></li>
   <li><a href="index.php?page=product">Product</a></li>
   <li><a href="index.php?page=order">Order</a></li>
+  <li><a href="index.php?page=statistic">Statistic</a></li>
   <li><a href="logout.php">Logout</a></li>
 </ul>
 <?php
