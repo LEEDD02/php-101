@@ -240,7 +240,6 @@ li:hover .under-line {
 }
 
 .product_list_container {
-  height: 50rem;
   overflow: hidden;
 }
 .product_list {
@@ -310,17 +309,7 @@ li:hover .under-line {
   background-color: #af4c4c;
   transform: scale(105%);
 }
-.extension {
-  background-color: #a04545;
-  padding: 0.5rem 2rem;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  border-radius: 0.25rem;
-}
-.extension:hover {
-  background-color: #af4c4c;
-}
+
 .product_detail {
   padding: 1rem 15rem;
 }
@@ -638,4 +627,14 @@ li:hover .under-line {
   text-align: center;
   padding-top: 0.5rem;
   color: #a04545;
+}
+.page-number-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.page-number {
+  text-decoration: none;
+  color: black;
 }

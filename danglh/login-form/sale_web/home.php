@@ -1,7 +1,17 @@
 <?php 
 require 'model/connect.php';
-$sql= "select * from product where type='iphone'";
+$sql = "select * from product";
 $result = mysqli_query($conn, $sql);
+$total_number_page = mysqli_num_rows($result);
+$item_per_page = 5;
+if (isset($_GET['trang'])) {
+  $current_page = $_GET['trang'];
+} else {$current_page = 1;}
+$offset = ($current_page - 1) * $item_per_page;
+$sql= "select * from product limit ".$item_per_page." offset ".$offset."";
+$result = mysqli_query($conn, $sql);
+$number_page = ceil($total_number_page/$item_per_page);
+
 ?>
 <section class="product_sect">
   <div class="product_list_container" id="product_list_container">
@@ -19,6 +29,12 @@ $result = mysqli_query($conn, $sql);
     </ul>
 
   </div>
-
+  <div class="page-number-container">
+    <?php for ($i=1; $i<=$number_page; $i++) { if($i == $current_page) {?>
+    <a style="color: red;" class="page-number" href="?trang=<?=$i?>"><?=$i?></a>
+    <?php } else { ?>
+    <a class="page-number" href="?trang=<?=$i?>"><?=$i?></a>
+    <?php }}?>
+  </div>
 
 </section>

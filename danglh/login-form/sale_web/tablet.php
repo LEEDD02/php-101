@@ -23,7 +23,6 @@ mysqli_close($conn);
     </ul>
 
   </div>
-  <button class="extension" onclick="extension()" id="extension">More...</button>
 
 
 </section>

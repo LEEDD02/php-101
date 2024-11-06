@@ -6,6 +6,7 @@ include 'header.php';
 
 if (!isset($_GET['page'])) {
   include 'banner.php';
+  include 'home.php';
   exit;
 } else {
   $page = $_GET['page'];

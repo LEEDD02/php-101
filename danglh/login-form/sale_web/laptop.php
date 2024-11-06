@@ -21,6 +21,5 @@ $result = mysqli_query($conn, $sql);
       <?php } ?>
     </ul>
   </div>
-  <button class="extension" onclick="extension()" id="extension">More...</button>
 
 </section>
