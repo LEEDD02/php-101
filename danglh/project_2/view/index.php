@@ -1,16 +1,15 @@
-<h1>Student List</h1>
-<a href="?action=create">Add student</a>
-<table width="100%">
+<a href="?action=create">Add</a>
+<table width=100%>
   <tr>
-    <td>ID</td>
-    <td>Student Name</td>
+    <td>Id</td>
+    <td>Name</td>
   </tr>
-  <?php foreach ($result as $item) { ?>
+  <?php foreach($arr as $each) {?>
   <tr>
-    <td><?=$item['id']?></td>
-    <td><?=$item['name']?></td>
-    <td><a href="?action=edit&&id=<?=$item['id']?>">Edit</a></td>
-    <td><a href="?action=delete&&id=<?=$item['id']?>">Delete</a></td>
+    <td><?=$each->GetId()?></td>
+    <td><?=$each->GetName()?></td>
+    <td><a href="?action=edit&&id=<?=$each->GetId()?>">Edit</a></td>
+    <td><a href="?action=delete&&id=<?=$each->GetId()?>">Delete</a></td>
   </tr>
   <?php }?>
 </table>
