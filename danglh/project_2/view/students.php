@@ -1,10 +1,10 @@
 <a href="?action=create">Add</a>
-<table width=100%>
+<table>
   <tr>
     <td>Id</td>
     <td>Name</td>
   </tr>
-  <?php foreach($arr as $each) {?>
+  <?php foreach ($arr as $each){?>
   <tr>
     <td><?=$each->GetId()?></td>
     <td><?=$each->GetName()?></td>

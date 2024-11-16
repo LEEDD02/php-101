@@ -1,42 +1,32 @@
 <?php
-class StudentsController
-{
-  public function index()
-  {
-    require 'model/Students.php';
-    $arr = (new Students())->GetAll();
-    require 'view/index.php';
+class StudentsController{
+  public function index (){
+    require 'model/students.php';
+    $arr = (new students)->all();
+    require 'view/students.php';
   }
-  public function create() {
+  public function create (){
     require 'view/create.php';
   }
-  public function store()
-  {
-    $name = $_POST['name'];
-    require 'model/Students.php';
-    (new Students())->Create($name);
+  public function store (){
+    require 'model/students.php';
+    (new students)->create($_POST);
     header('location: index.php');
   }
-  public function edit()
-  {
+  public function edit (){
     $id = $_GET['id'];
-    require 'model/Students.php';
-    $arr = (new Students())->find($id);
+    require 'model/students.php';
+    $object = (new students)->find($id);
     require 'view/edit.php';
   }
-  public function update()
-  {
-    $id = $_POST['id'];
-    $name = $_POST['name'];
-    require 'model/Students.php';
-    (new Students())->Update($id,$name);
+  public function update (){
+    require 'model/students.php';
+    (new students)->update($_POST);
     header('location: index.php');
   }
-  public function delete()
-  {
-    $id = $_GET['id'];
-    require 'model/Students.php';
-    (new Students())->Destroy($id);
+  public function delete (){
+    require 'model/students.php';
+    (new students)->delete($_GET['id']);
     header('location: index.php');
   }
 }
