@@ -6,6 +6,8 @@ class StudentsController{
     require 'view/students.php';
   }
   public function create (){
+    require 'model/classes.php';
+    $class = (new classes)->all();
     require 'view/create.php';
   }
   public function store (){
@@ -17,6 +19,8 @@ class StudentsController{
     $id = $_GET['id'];
     require 'model/students.php';
     $object = (new students)->find($id);
+    require 'model/classes.php';
+    $class = (new classes)->all();
     require 'view/edit.php';
   }
   public function update (){

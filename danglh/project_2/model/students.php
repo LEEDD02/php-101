@@ -1,9 +1,9 @@
 <?php
-require 'model/connect.php';
+require_once 'model/connect.php';
 require 'model/StudentsObject.php';
 class students {
   public function all(){
-    $sql = "select * from students";
+    $sql = "SELECT students.*, classes.class_name from students LEFT JOIN classes on students.class_id = classes.id";
     $result = (new connect)->select($sql);
     foreach ($result as $each) {
       $object = new StudentsObject($each);
@@ -13,7 +13,7 @@ class students {
   }
   public function create($params){
     $object = new StudentsObject($params);
-    $sql = "insert into students (name) values ('{$object->GetName()}')";
+    $sql = "insert into students (name,class_id) values ('{$object->GetName()}','{$object->GetClassId()}')";
     (new connect)->execute($sql);
     
   }
@@ -25,7 +25,7 @@ class students {
   }
   public function update($params){
     $object = new StudentsObject($params);
-    $sql = "update students set name='{$object->GetName()}' where id = '{$object->GetId()}'";
+    $sql = "update students set name='{$object->GetName()}', class_id='{$object->GetClassId()}' where id = '{$object->GetId()}'";
     (new connect)->execute($sql);
     
   }
